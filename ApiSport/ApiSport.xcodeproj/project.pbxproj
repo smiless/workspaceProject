@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6198BA2192BFFE500F0D515 /* apiDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = apiDB.sqlite; sourceTree = "<group>"; };
 		D654B64B192BECB900FFDC2C /* ApiSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D654B64E192BECB900FFDC2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D654B650192BECB900FFDC2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +80,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6198B9F192BFF9A00F0D515 /* RESSOURCES */ = {
+			isa = PBXGroup;
+			children = (
+				D6198BA1192BFFAA00F0D515 /* IMG */,
+				D6198BA0192BFFA400F0D515 /* DB */,
+			);
+			name = RESSOURCES;
+			sourceTree = "<group>";
+		};
+		D6198BA0192BFFA400F0D515 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D6198BA2192BFFE500F0D515 /* apiDB.sqlite */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		D6198BA1192BFFAA00F0D515 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = IMG;
+			sourceTree = "<group>";
+		};
 		D654B642192BECB900FFDC2C = {
 			isa = PBXGroup;
 			children = (
@@ -112,9 +137,10 @@
 		D654B654192BECB900FFDC2C /* ApiSport */ = {
 			isa = PBXGroup;
 			children = (
+				D654B666192BECB900FFDC2C /* Images.xcassets */,
 				D654B688192BECE500FFDC2C /* DAL */,
 				D654B683192BECBF00FFDC2C /* IMH */,
-				D654B666192BECB900FFDC2C /* Images.xcassets */,
+				D6198B9F192BFF9A00F0D515 /* RESSOURCES */,
 				D654B655192BECB900FFDC2C /* Supporting Files */,
 			);
 			path = ApiSport;
@@ -496,6 +522,7 @@
 				D654B67F192BECB900FFDC2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D654B680192BECB900FFDC2C /* Build configuration list for PBXNativeTarget "ApiSportTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +531,7 @@
 				D654B682192BECB900FFDC2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
