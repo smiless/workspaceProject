@@ -66,12 +66,9 @@
         [error appendString:@"\nInvalid Login"];
     if(![util checkString:[_txtPassword text]])
         [error appendString:@"\nInvalid Password"];
-    if(![[_txtRetype text]isEqualToString:[_txtPassword text]]){
-        if(![util checkString:[_txtRetype text]])
-            [error appendString:@"\nInvalid Password check"];
-        else
-            [error appendString:@"\nPasswords don't match"];
-    }
+    if(![[_txtRetype text]isEqualToString:[_txtPassword text]])
+        [error appendString:@"\nPasswords don't match"];
+    
     if(![error isEqualToString:@""]){
         [self showAlert];
         error = [[NSMutableString alloc]initWithString:@""];
@@ -80,7 +77,7 @@
 }
 -(void)showAlert{
     UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:
-                              @"Erreur" message:error delegate:self
+                              @"Error" message:error delegate:self
                                              cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alertView show];
     
