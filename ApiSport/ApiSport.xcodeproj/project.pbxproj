@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6198BA5192C00CC00F0D515 /* Utilisateur.m in Sources */ = {isa = PBXBuildFile; fileRef = D6198BA4192C00CC00F0D515 /* Utilisateur.m */; };
+		D6198BA8192C00E700F0D515 /* UtilisateurFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D6198BA7192C00E700F0D515 /* UtilisateurFinder.m */; };
+		D6198BAB192C00FA00F0D515 /* UtilisateurPersister.m in Sources */ = {isa = PBXBuildFile; fileRef = D6198BAA192C00FA00F0D515 /* UtilisateurPersister.m */; };
+		D6198BAE192C037600F0D515 /* FicheUtilisateurController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6198BAD192C037600F0D515 /* FicheUtilisateurController.m */; };
+		D6198BB1192C039100F0D515 /* CreationUtilisateurController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6198BB0192C039100F0D515 /* CreationUtilisateurController.m */; };
+		D6198BB3192C08AF00F0D515 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6198BB2192C08AF00F0D515 /* libsqlite3.dylib */; };
 		D654B64F192BECB900FFDC2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D654B64E192BECB900FFDC2C /* Foundation.framework */; };
 		D654B651192BECB900FFDC2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D654B650192BECB900FFDC2C /* CoreGraphics.framework */; };
 		D654B653192BECB900FFDC2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D654B652192BECB900FFDC2C /* UIKit.framework */; };
@@ -21,6 +27,7 @@
 		D654B670192BECB900FFDC2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D654B652192BECB900FFDC2C /* UIKit.framework */; };
 		D654B678192BECB900FFDC2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D654B676192BECB900FFDC2C /* InfoPlist.strings */; };
 		D654B67A192BECB900FFDC2C /* ApiSportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D654B679192BECB900FFDC2C /* ApiSportTests.m */; };
+		D6E47744192CCFA600E43A68 /* ApiDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D6E47743192CCFA600E43A68 /* ApiDB.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D6198BA2192BFFE500F0D515 /* apiDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = apiDB.sqlite; sourceTree = "<group>"; };
+		D6198BA3192C00CC00F0D515 /* Utilisateur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilisateur.h; sourceTree = "<group>"; };
+		D6198BA4192C00CC00F0D515 /* Utilisateur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilisateur.m; sourceTree = "<group>"; };
+		D6198BA6192C00E700F0D515 /* UtilisateurFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilisateurFinder.h; sourceTree = "<group>"; };
+		D6198BA7192C00E700F0D515 /* UtilisateurFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilisateurFinder.m; sourceTree = "<group>"; };
+		D6198BA9192C00FA00F0D515 /* UtilisateurPersister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilisateurPersister.h; sourceTree = "<group>"; };
+		D6198BAA192C00FA00F0D515 /* UtilisateurPersister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilisateurPersister.m; sourceTree = "<group>"; };
+		D6198BAC192C037600F0D515 /* FicheUtilisateurController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FicheUtilisateurController.h; sourceTree = "<group>"; };
+		D6198BAD192C037600F0D515 /* FicheUtilisateurController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FicheUtilisateurController.m; sourceTree = "<group>"; };
+		D6198BAF192C039100F0D515 /* CreationUtilisateurController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationUtilisateurController.h; sourceTree = "<group>"; };
+		D6198BB0192C039100F0D515 /* CreationUtilisateurController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationUtilisateurController.m; sourceTree = "<group>"; };
+		D6198BB2192C08AF00F0D515 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		D654B64B192BECB900FFDC2C /* ApiSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D654B64E192BECB900FFDC2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D654B650192BECB900FFDC2C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,12 +65,13 @@
 		D654B661192BECB900FFDC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D654B663192BECB900FFDC2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D654B664192BECB900FFDC2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D654B666192BECB900FFDC2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D654B666192BECB900FFDC2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ApiSport/Images.xcassets; sourceTree = "<group>"; };
 		D654B66C192BECB900FFDC2C /* ApiSportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D654B66D192BECB900FFDC2C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D654B675192BECB900FFDC2C /* ApiSportTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApiSportTests-Info.plist"; sourceTree = "<group>"; };
 		D654B677192BECB900FFDC2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D654B679192BECB900FFDC2C /* ApiSportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiSportTests.m; sourceTree = "<group>"; };
+		D6E47743192CCFA600E43A68 /* ApiDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ApiDB.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6198BB3192C08AF00F0D515 /* libsqlite3.dylib in Frameworks */,
 				D654B651192BECB900FFDC2C /* CoreGraphics.framework in Frameworks */,
 				D654B653192BECB900FFDC2C /* UIKit.framework in Frameworks */,
 				D654B64F192BECB900FFDC2C /* Foundation.framework in Frameworks */,
@@ -92,7 +111,6 @@
 		D6198BA0192BFFA400F0D515 /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				D6198BA2192BFFE500F0D515 /* apiDB.sqlite */,
 			);
 			name = DB;
 			sourceTree = "<group>";
@@ -107,6 +125,7 @@
 		D654B642192BECB900FFDC2C = {
 			isa = PBXGroup;
 			children = (
+				D654B666192BECB900FFDC2C /* Images.xcassets */,
 				D654B654192BECB900FFDC2C /* ApiSport */,
 				D654B673192BECB900FFDC2C /* ApiSportTests */,
 				D654B64D192BECB900FFDC2C /* Frameworks */,
@@ -126,6 +145,7 @@
 		D654B64D192BECB900FFDC2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6198BB2192C08AF00F0D515 /* libsqlite3.dylib */,
 				D654B64E192BECB900FFDC2C /* Foundation.framework */,
 				D654B650192BECB900FFDC2C /* CoreGraphics.framework */,
 				D654B652192BECB900FFDC2C /* UIKit.framework */,
@@ -137,7 +157,7 @@
 		D654B654192BECB900FFDC2C /* ApiSport */ = {
 			isa = PBXGroup;
 			children = (
-				D654B666192BECB900FFDC2C /* Images.xcassets */,
+				D6E47743192CCFA600E43A68 /* ApiDB.sqlite */,
 				D654B688192BECE500FFDC2C /* DAL */,
 				D654B683192BECBF00FFDC2C /* IMH */,
 				D6198B9F192BFF9A00F0D515 /* RESSOURCES */,
@@ -192,6 +212,10 @@
 				D654B65E192BECB900FFDC2C /* AppDelegate.m */,
 				D654B663192BECB900FFDC2C /* ViewController.h */,
 				D654B664192BECB900FFDC2C /* ViewController.m */,
+				D6198BAC192C037600F0D515 /* FicheUtilisateurController.h */,
+				D6198BAD192C037600F0D515 /* FicheUtilisateurController.m */,
+				D6198BAF192C039100F0D515 /* CreationUtilisateurController.h */,
+				D6198BB0192C039100F0D515 /* CreationUtilisateurController.m */,
 			);
 			name = CONTROLLER;
 			sourceTree = "<group>";
@@ -199,6 +223,8 @@
 		D654B686192BECD500FFDC2C /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
+				D6198BA3192C00CC00F0D515 /* Utilisateur.h */,
+				D6198BA4192C00CC00F0D515 /* Utilisateur.m */,
 			);
 			name = MODEL;
 			sourceTree = "<group>";
@@ -214,6 +240,10 @@
 		D654B688192BECE500FFDC2C /* DAL */ = {
 			isa = PBXGroup;
 			children = (
+				D6198BA6192C00E700F0D515 /* UtilisateurFinder.h */,
+				D6198BA7192C00E700F0D515 /* UtilisateurFinder.m */,
+				D6198BA9192C00FA00F0D515 /* UtilisateurPersister.h */,
+				D6198BAA192C00FA00F0D515 /* UtilisateurPersister.m */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -294,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E47744192CCFA600E43A68 /* ApiDB.sqlite in Resources */,
 				D654B667192BECB900FFDC2C /* Images.xcassets in Resources */,
 				D654B659192BECB900FFDC2C /* InfoPlist.strings in Resources */,
 				D654B662192BECB900FFDC2C /* Main.storyboard in Resources */,
@@ -318,6 +349,11 @@
 				D654B665192BECB900FFDC2C /* ViewController.m in Sources */,
 				D654B65F192BECB900FFDC2C /* AppDelegate.m in Sources */,
 				D654B65B192BECB900FFDC2C /* main.m in Sources */,
+				D6198BAE192C037600F0D515 /* FicheUtilisateurController.m in Sources */,
+				D6198BAB192C00FA00F0D515 /* UtilisateurPersister.m in Sources */,
+				D6198BA8192C00E700F0D515 /* UtilisateurFinder.m in Sources */,
+				D6198BB1192C039100F0D515 /* CreationUtilisateurController.m in Sources */,
+				D6198BA5192C00CC00F0D515 /* Utilisateur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
