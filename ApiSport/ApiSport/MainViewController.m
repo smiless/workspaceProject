@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  ApiSport
 //
 //  Created by Bryan D on 22/05/14.
 //  Copyright (c) 2014 com.bidi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad
 {

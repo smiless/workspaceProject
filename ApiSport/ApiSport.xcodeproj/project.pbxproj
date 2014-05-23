@@ -14,7 +14,7 @@
 		EF978013192F2896003C2A03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF978012192F2896003C2A03 /* main.m */; };
 		EF978017192F2896003C2A03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF978016192F2896003C2A03 /* AppDelegate.m */; };
 		EF97801A192F2896003C2A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF978018192F2896003C2A03 /* Main.storyboard */; };
-		EF97801D192F2896003C2A03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF97801C192F2896003C2A03 /* ViewController.m */; };
+		EF97801D192F2896003C2A03 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF97801C192F2896003C2A03 /* MainViewController.m */; };
 		EF97801F192F2896003C2A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF97801E192F2896003C2A03 /* Images.xcassets */; };
 		EF978026192F2896003C2A03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF978025192F2896003C2A03 /* XCTest.framework */; };
 		EF978027192F2896003C2A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF978006192F2896003C2A03 /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		EF978015192F2896003C2A03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF978016192F2896003C2A03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF978019192F2896003C2A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF97801B192F2896003C2A03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF97801C192F2896003C2A03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF97801B192F2896003C2A03 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EF97801C192F2896003C2A03 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EF97801E192F2896003C2A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EF978024192F2896003C2A03 /* ApiSportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF978025192F2896003C2A03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -112,11 +112,13 @@
 		EF97800C192F2896003C2A03 /* ApiSport */ = {
 			isa = PBXGroup;
 			children = (
+				EF97803C192F310E003C2A03 /* IHM */,
+				EF97803B192F3107003C2A03 /* DAL */,
 				EF978015192F2896003C2A03 /* AppDelegate.h */,
 				EF978016192F2896003C2A03 /* AppDelegate.m */,
 				EF978018192F2896003C2A03 /* Main.storyboard */,
-				EF97801B192F2896003C2A03 /* ViewController.h */,
-				EF97801C192F2896003C2A03 /* ViewController.m */,
+				EF97801B192F2896003C2A03 /* MainViewController.h */,
+				EF97801C192F2896003C2A03 /* MainViewController.m */,
 				EF97801E192F2896003C2A03 /* Images.xcassets */,
 				EF97800D192F2896003C2A03 /* Supporting Files */,
 			);
@@ -150,6 +152,20 @@
 				EF97802E192F2896003C2A03 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF97803B192F3107003C2A03 /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DAL;
+			sourceTree = "<group>";
+		};
+		EF97803C192F310E003C2A03 /* IHM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = IHM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF97801D192F2896003C2A03 /* ViewController.m in Sources */,
+				EF97801D192F2896003C2A03 /* MainViewController.m in Sources */,
 				EF978017192F2896003C2A03 /* AppDelegate.m in Sources */,
 				EF978013192F2896003C2A03 /* main.m in Sources */,
 			);
