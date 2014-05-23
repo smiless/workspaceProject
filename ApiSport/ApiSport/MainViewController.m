@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 

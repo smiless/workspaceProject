@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="664" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Create User Controller - Create you-->
         <scene sceneID="Pxa-xF-eAg">
             <objects>
-                <viewController id="9Ni-lk-YdQ" sceneMemberID="viewController">
+                <viewController id="9Ni-lk-YdQ" customClass="CreateUserController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kcl-XA-ooD"/>
                         <viewControllerLayoutGuide type="bottom" id="SVA-Kp-fpx"/>
@@ -84,34 +84,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EYt-3f-EF1">
-                                <rect key="frame" x="62" y="258" width="196" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u06-SC-mkh">
-                                <rect key="frame" x="62" y="315" width="196" height="30"/>
+                                <rect key="frame" x="62" y="279" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-M3-eJm">
-                                <rect key="frame" x="62" y="375" width="196" height="30"/>
+                                <rect key="frame" x="62" y="339" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype-Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XR-TH-xlu">
-                                <rect key="frame" x="62" y="436" width="196" height="30"/>
+                                <rect key="frame" x="62" y="400" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-kX-6Zy">
+                                <rect key="frame" x="116" y="469" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save you">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveUser:" destination="9Ni-lk-YdQ" eventType="touchUpInside" id="z7m-uy-4Ow"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gyq-Ye-hAi"/>
+                    <navigationItem key="navigationItem" title="Create you" id="gyq-Ye-hAi"/>
+                    <connections>
+                        <outlet property="txtEmail" destination="49B-Hh-1cg" id="9vT-vn-mKC"/>
+                        <outlet property="txtFirst" destination="5mw-u1-O9R" id="Ap4-MX-ia5"/>
+                        <outlet property="txtLogin" destination="u06-SC-mkh" id="544-a0-kK8"/>
+                        <outlet property="txtName" destination="Tvu-b7-Hdo" id="rSZ-mu-Xay"/>
+                        <outlet property="txtPassword" destination="VBo-M3-eJm" id="pJe-XJ-DGY"/>
+                        <outlet property="txtRetype" destination="0XR-TH-xlu" id="nm9-7u-QUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPk-z0-gKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
