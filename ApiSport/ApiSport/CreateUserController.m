@@ -8,6 +8,8 @@
 
 #import "CreateUserController.h"
 #import "Util.h"
+#import "UCC.h"
+#import "User.h"
 @interface CreateUserController ()
 
 @end
@@ -40,21 +42,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
+#pragma mark - Save
 - (IBAction)saveUser:(id)sender {
-    [self checkUserField];
+    if([self checkUserField]){
+     UCC *sharedUCC = [UCC sharedUCC];
+      //  sharedUCC addUser(user);
+    }
     
 }
+
+#pragma mark - CheckUser
 -(id)checkUserField{
     if(![util checkString:[_txtName text]])
         [error appendString:@"\nInvalid Name"];
@@ -72,9 +69,13 @@
     if(![error isEqualToString:@""]){
         [self showAlert];
         error = [[NSMutableString alloc]initWithString:@""];
+        return nil;
     }
-    return nil;
+    User *user = [[User alloc]initWithName:[_txtName text] :[_txtFirst text] :[_txtEmail text] :[_txtLogin text] :[_txtPassword text]];
+    return user;
 }
+
+#pragma mark - ShowAlert
 -(void)showAlert{
     UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:
                               @"Error" message:error delegate:self

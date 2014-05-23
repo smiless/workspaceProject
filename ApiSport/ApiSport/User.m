@@ -10,4 +10,16 @@
 
 @implementation User
 
+-(id)initWithName:(NSString*)name :(NSString*)firstName :(NSString*)email :(NSString*)login :(NSString*)pass{
+    self = [super init];
+    if(self){
+        _name = name;
+        _firstName = name;
+        _email = email;
+        _login = login;
+        _pass = pass;
+    }
+    return self;
+}
+
 @end

@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 com.bidi. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "FirstViewController.h"
 
-@interface MainViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad
 {

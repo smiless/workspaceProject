@@ -18,4 +18,7 @@
     return sharedUCC;
 }
 
+-(void)addUser{
+    
+}
 @end

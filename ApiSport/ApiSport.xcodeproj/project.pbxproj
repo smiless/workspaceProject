@@ -14,7 +14,7 @@
 		EF978013192F2896003C2A03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF978012192F2896003C2A03 /* main.m */; };
 		EF978017192F2896003C2A03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF978016192F2896003C2A03 /* AppDelegate.m */; };
 		EF97801A192F2896003C2A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF978018192F2896003C2A03 /* Main.storyboard */; };
-		EF97801D192F2896003C2A03 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF97801C192F2896003C2A03 /* MainViewController.m */; };
+		EF97801D192F2896003C2A03 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF97801C192F2896003C2A03 /* FirstViewController.m */; };
 		EF97801F192F2896003C2A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF97801E192F2896003C2A03 /* Images.xcassets */; };
 		EF978026192F2896003C2A03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF978025192F2896003C2A03 /* XCTest.framework */; };
 		EF978027192F2896003C2A03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF978006192F2896003C2A03 /* Foundation.framework */; };
@@ -52,8 +52,8 @@
 		EF978015192F2896003C2A03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF978016192F2896003C2A03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF978019192F2896003C2A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF97801B192F2896003C2A03 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		EF97801C192F2896003C2A03 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EF97801B192F2896003C2A03 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EF97801C192F2896003C2A03 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EF97801E192F2896003C2A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EF978024192F2896003C2A03 /* ApiSportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiSportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF978025192F2896003C2A03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -197,8 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				EF978057192F36FC003C2A03 /* Create */,
-				EF97801B192F2896003C2A03 /* MainViewController.h */,
-				EF97801C192F2896003C2A03 /* MainViewController.m */,
+				EF97801B192F2896003C2A03 /* FirstViewController.h */,
+				EF97801C192F2896003C2A03 /* FirstViewController.m */,
 				EF978015192F2896003C2A03 /* AppDelegate.h */,
 				EF978016192F2896003C2A03 /* AppDelegate.m */,
 			);
@@ -341,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF978042192F31BC003C2A03 /* User.m in Sources */,
-				EF97801D192F2896003C2A03 /* MainViewController.m in Sources */,
+				EF97801D192F2896003C2A03 /* FirstViewController.m in Sources */,
 				EF978045192F31C9003C2A03 /* Event.m in Sources */,
 				EF978049192F3210003C2A03 /* Persister.m in Sources */,
 				EF978056192F36E8003C2A03 /* CreateUserController.m in Sources */,

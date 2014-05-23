@@ -10,4 +10,6 @@
 
 @interface UCC : NSObject
 + (id)sharedUCC;
+
+-(void)addUser;
 @end

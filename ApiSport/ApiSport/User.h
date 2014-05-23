@@ -10,4 +10,12 @@
 
 @interface User : NSObject
 
+
+@property NSString *name;
+@property NSString *firstName;
+@property NSString *email;
+@property NSString *login;
+@property NSString *pass;
+
+-(id)initWithName:(NSString*)name :(NSString*)firstName :(NSString*)email :(NSString*)login :(NSString*)pass;
 @end
