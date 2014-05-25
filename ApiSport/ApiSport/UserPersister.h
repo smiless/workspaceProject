@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface Persister : NSObject
-
+#import "User.h"
+@interface UserPersister : NSObject
++ (id)sharedUserPersister;
+-(void)addUser:(User*)user;
 @end

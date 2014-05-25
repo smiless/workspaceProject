@@ -7,7 +7,7 @@
 //
 
 #import "User.h"
-
+#import "UserPersister.h"
 @implementation User
 
 -(id)initWithName:(NSString*)name :(NSString*)firstName :(NSString*)email :(NSString*)login :(NSString*)pass{
@@ -22,4 +22,20 @@
     return self;
 }
 
+-(void)addUser:(User *)user{
+    UserPersister *sharedPersister = [UserPersister sharedUserPersister];
+    [sharedPersister addUser:user];
+}
+
+-(id) copyWithZone: (NSZone *) zone
+{
+    User *userCopy = [[User allocWithZone: zone] init];
+    
+    userCopy->_name = [_name copyWithZone:zone];
+    userCopy->_firstName = [_firstName copyWithZone:zone];
+    userCopy->_email = [_email copyWithZone:zone];
+    userCopy->_login = [_login copyWithZone:zone];
+    userCopy->_pass = [_pass copyWithZone:zone];
+    return userCopy;
+}
 @end

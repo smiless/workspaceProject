@@ -66,45 +66,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tvu-b7-Hdo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tvu-b7-Hdo">
                                 <rect key="frame" x="62" y="75" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firstname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mw-u1-O9R">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firstname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mw-u1-O9R">
                                 <rect key="frame" x="62" y="136" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49B-Hh-1cg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="49B-Hh-1cg">
                                 <rect key="frame" x="62" y="197" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u06-SC-mkh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u06-SC-mkh">
                                 <rect key="frame" x="62" y="279" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-M3-eJm">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VBo-M3-eJm">
                                 <rect key="frame" x="62" y="339" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype-Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XR-TH-xlu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype-Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0XR-TH-xlu">
                                 <rect key="frame" x="62" y="400" width="196" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-kX-6Zy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygJ-kX-6Zy">
                                 <rect key="frame" x="116" y="469" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="JJP-8j-UUS"/>
+                                </constraints>
                                 <state key="normal" title="Save you">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -114,6 +117,28 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VBo-M3-eJm" firstAttribute="top" secondItem="u06-SC-mkh" secondAttribute="bottom" constant="30" id="092-BJ-LuS"/>
+                            <constraint firstItem="Tvu-b7-Hdo" firstAttribute="top" secondItem="Kcl-XA-ooD" secondAttribute="bottom" constant="11" id="0QQ-4C-BEn"/>
+                            <constraint firstItem="49B-Hh-1cg" firstAttribute="top" secondItem="5mw-u1-O9R" secondAttribute="bottom" constant="31" id="2go-im-LBv"/>
+                            <constraint firstItem="0XR-TH-xlu" firstAttribute="centerX" secondItem="ygJ-kX-6Zy" secondAttribute="centerX" id="2ip-BZ-aBy"/>
+                            <constraint firstItem="u06-SC-mkh" firstAttribute="top" secondItem="49B-Hh-1cg" secondAttribute="bottom" constant="52" id="5hM-Yy-DrA"/>
+                            <constraint firstItem="u06-SC-mkh" firstAttribute="leading" secondItem="49B-Hh-1cg" secondAttribute="leading" id="DIa-VB-qVG"/>
+                            <constraint firstItem="Tvu-b7-Hdo" firstAttribute="leading" secondItem="Cmv-Qq-Fjz" secondAttribute="leading" constant="62" id="Itq-L3-cNH"/>
+                            <constraint firstItem="0XR-TH-xlu" firstAttribute="trailing" secondItem="VBo-M3-eJm" secondAttribute="trailing" id="LT8-hg-JBK"/>
+                            <constraint firstItem="5mw-u1-O9R" firstAttribute="trailing" secondItem="49B-Hh-1cg" secondAttribute="trailing" id="TAW-Fl-J9F"/>
+                            <constraint firstItem="5mw-u1-O9R" firstAttribute="trailing" secondItem="Tvu-b7-Hdo" secondAttribute="trailing" id="U3t-LU-gVC"/>
+                            <constraint firstItem="u06-SC-mkh" firstAttribute="trailing" secondItem="49B-Hh-1cg" secondAttribute="trailing" id="Vnc-Wr-U57"/>
+                            <constraint firstItem="5mw-u1-O9R" firstAttribute="top" secondItem="Tvu-b7-Hdo" secondAttribute="bottom" constant="31" id="WiU-Ch-sjg"/>
+                            <constraint firstItem="Tvu-b7-Hdo" firstAttribute="centerX" secondItem="Cmv-Qq-Fjz" secondAttribute="centerX" id="alG-9c-olG"/>
+                            <constraint firstItem="u06-SC-mkh" firstAttribute="trailing" secondItem="VBo-M3-eJm" secondAttribute="trailing" id="lFQ-tq-D8a"/>
+                            <constraint firstItem="49B-Hh-1cg" firstAttribute="leading" secondItem="5mw-u1-O9R" secondAttribute="leading" id="qFh-jw-nWk"/>
+                            <constraint firstItem="ygJ-kX-6Zy" firstAttribute="top" secondItem="0XR-TH-xlu" secondAttribute="bottom" constant="39" id="thu-Nq-a5N"/>
+                            <constraint firstItem="u06-SC-mkh" firstAttribute="leading" secondItem="VBo-M3-eJm" secondAttribute="leading" id="vmU-gT-rpX"/>
+                            <constraint firstItem="VBo-M3-eJm" firstAttribute="leading" secondItem="0XR-TH-xlu" secondAttribute="leading" id="voS-OD-J4z"/>
+                            <constraint firstItem="Tvu-b7-Hdo" firstAttribute="leading" secondItem="5mw-u1-O9R" secondAttribute="leading" id="xr2-Wz-xv4"/>
+                            <constraint firstItem="0XR-TH-xlu" firstAttribute="top" secondItem="VBo-M3-eJm" secondAttribute="bottom" constant="31" id="xtv-vu-ixd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create you" id="gyq-Ye-hAi"/>
                     <connections>

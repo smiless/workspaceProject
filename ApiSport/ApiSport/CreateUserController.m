@@ -41,14 +41,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 #pragma mark - Save
 - (IBAction)saveUser:(id)sender {
-    if([self checkUserField]){
+    User *tmp = [self checkUserField];
+    if([util checkObject:tmp]){
      UCC *sharedUCC = [UCC sharedUCC];
-      //  sharedUCC addUser(user);
+        User *user = [tmp copy];
+        [sharedUCC addUser:user];
     }
-    
 }
 
 #pragma mark - CheckUser

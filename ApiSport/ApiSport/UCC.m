@@ -7,7 +7,7 @@
 //
 
 #import "UCC.h"
-
+#import "User.h"
 @implementation UCC
 + (id)sharedUCC {
     static UCC *sharedUCC = nil;
@@ -18,7 +18,7 @@
     return sharedUCC;
 }
 
--(void)addUser{
-    
+-(void)addUser:(User*)user{
+    [user addUser:user];
 }
 @end

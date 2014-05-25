@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "User.h"
 @interface UCC : NSObject
 + (id)sharedUCC;
 
--(void)addUser;
+-(void)addUser:(User*)user;
 @end

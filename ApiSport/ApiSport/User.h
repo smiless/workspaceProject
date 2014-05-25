@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
+@interface User : NSObject <NSCopying>
 
 
 @property NSString *name;
@@ -18,4 +18,6 @@
 @property NSString *pass;
 
 -(id)initWithName:(NSString*)name :(NSString*)firstName :(NSString*)email :(NSString*)login :(NSString*)pass;
+
+-(void)addUser:(User*)user;
 @end
